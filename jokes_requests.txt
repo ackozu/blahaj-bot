@@ -1,0 +1,1 @@
+Request jokes, use the /request command on a server with Blåhaj.
