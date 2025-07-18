@@ -2,44 +2,64 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 20px;
-    background-color: #151424;
-    color: #333;
+    background-color: #151424; /* Main background color */
+    color: #e0e0e0; /* Light gray text for contrast */
     text-align: center;
 }
 
 header {
-    background-color: #333;
-    color: white;
+    background-color: #2a2a3a; /* Slightly lighter shade for header background */
+    color: white; /* White text for header */
     padding: 10px 0;
     margin-bottom: 20px;
+    border-bottom: 2px solid #5a5a6a; /* A subtle border for separation */
+}
+
+h1 {
+    color: #00b0ff; /* A bright blue for headings */
 }
 
 main {
-    background-color: #141138;
+    background-color: #1f1e2f; /* Another slightly lighter dark shade for main content area */
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* More pronounced shadow for depth */
     max-width: 600px;
     margin: 0 auto;
+}
+
+p {
+    line-height: 1.6; /* Improve readability of paragraphs */
 }
 
 button {
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
-    background-color: #0b092e;
+    background-color: #007bff; /* A standard blue for buttons */
     color: white;
     border: none;
     border-radius: 5px;
     margin-top: 15px;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
 }
 
 button:hover {
-    background-color: #0a0640;
+    background-color: #0056b3; /* Darker blue on hover */
 }
 
 footer {
     margin-top: 30px;
     font-size: 0.8em;
-    color: #666;
+    color: #888888; /* Slightly darker gray for footer text */
+}
+
+/* You might want to add styles for links as well */
+a {
+    color: #00b0ff; /* Use the same bright blue for links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
