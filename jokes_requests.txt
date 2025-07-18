@@ -1,1 +1,6 @@
 Request jokes, use the /request command on a server with Blåhaj.
+**New Jokes submitted by Requested by ackozu#0 (ID: 1265057708587880458) in IKEA Blåhaj (ID: 1392611136800555018)**
+---
+Joke 1: What do you call a dog god? a Dogod!
+Submitted on 2025-07-18 00:09:05 UTC
+
