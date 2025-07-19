@@ -8,7 +8,7 @@ body {
 }
 
 header {
-    background-color: #1c1e2b /* A slightly lighter shade of the main background for header */
+    background-color: #1c1e2b; /* A slightly lighter shade of the main background for header */
     color: white; /* White text for header */
     padding: 10px 0;
     margin-bottom: 20px;
@@ -66,3 +66,34 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+/* Styling for Inline Code */
+code {
+    font-family: 'Intel One Mono', monospace; /* Ensure the code font is applied */
+    background-color: #36393f; /* A slightly distinct dark background for inline code */
+    color: #b9bbbe; /* Lighter text color for readability */
+    padding: 2px 4px; /* Small padding around the text */
+    border-radius: 3px; /* Slightly rounded corners */
+    font-size: 0.9em; /* Make inline code slightly smaller than surrounding text */
+    white-space: nowrap; /* Prevent inline code from wrapping unnaturally */
+}
+pre {
+    background-color: #2b2d31; /* A distinct dark background for the entire block */
+    color: #b9bbbe; /* Lighter text color for readability */
+    padding: 15px; /* Generous padding inside the block */
+    border-radius: 8px; /* Rounded corners for the block */
+    overflow-x: auto; /* Adds horizontal scroll if code is too long */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'Intel One Mono', monospace; /* Ensure the code font is applied */
+    text-align: left; /* Ensure text inside code block is left aligned, even if main is centered */
+}
+pre code {
+    /* Styles specifically for the code INSIDE the pre block */
+    display: block; /* Ensures the code takes up full width of pre */
+    padding: 0; /* Remove extra padding if inherited from 'code' rule */
+    background-color: transparent; /* No background as it's set on 'pre' */
+    color: inherit; /* Inherit text color from 'pre' */
+    font-size: inherit; /* Inherit font size from 'pre' */
+    white-space: pre-wrap; /* Allows long lines to wrap if desired, but `overflow-x: auto` is usually better */
+    word-break: break-all; /* Helps break long strings without spaces */
