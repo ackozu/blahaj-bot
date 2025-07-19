@@ -53,7 +53,7 @@ button:hover {
 footer {
     margin-top: 30px;
     font-size: 0.8em;
-    color: #888888; /* Slightly darker gray for footer text */
+    color: #465999; /* Slightly blurple for footer text */
     /* text-align: center; - Inherits from body */
 }
 
