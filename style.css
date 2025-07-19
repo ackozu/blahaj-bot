@@ -31,7 +31,7 @@ main {
 }
 
 p {
-    line-height: 1.6; /* Improve readability of paragraphs */
+    line-height: 2.0; /* Improve readability of paragraphs */
 }
 
 button {
