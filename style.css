@@ -28,6 +28,9 @@ main {
     max-width: 600px;
     margin: 0 auto; /* This centers the main content block itself */
     text-align: left; /* This makes the text INSIDE the main block align to the left */
+
+    /* Add the animation properties for fade-in */
+    animation: fadeIn 0.8s ease-out forwards; /* Name | Duration | Timing Function | Fill Mode */
 }
 
 p {
@@ -41,7 +44,7 @@ button {
     background-color: #7289DA; /* Accent color for buttons */
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 5px; /* Corrected from 5ph */
     margin-top: 15px;
     transition: background-color 0.3s ease; /* Smooth transition for hover effect */
 }
@@ -67,6 +70,7 @@ a:hover {
     text-decoration: underline;
 }
 
+/* --- Code Block Styles --- */
 /* Styling for Inline Code */
 code {
     font-family: 'Intel One Mono', monospace; /* Ensure the code font is applied */
@@ -77,6 +81,8 @@ code {
     font-size: 0.9em; /* Make inline code slightly smaller than surrounding text */
     white-space: nowrap; /* Prevent inline code from wrapping unnaturally */
 }
+
+/* Styling for Code Blocks (multi-line) */
 pre {
     background-color: #2b2d31; /* A distinct dark background for the entire block */
     color: #b9bbbe; /* Lighter text color for readability */
@@ -88,6 +94,7 @@ pre {
     font-family: 'Intel One Mono', monospace; /* Ensure the code font is applied */
     text-align: left; /* Ensure text inside code block is left aligned, even if main is centered */
 }
+
 pre code {
     /* Styles specifically for the code INSIDE the pre block */
     display: block; /* Ensures the code takes up full width of pre */
@@ -97,22 +104,10 @@ pre code {
     font-size: inherit; /* Inherit font size from 'pre' */
     white-space: pre-wrap; /* Allows long lines to wrap if desired, but `overflow-x: auto` is usually better */
     word-break: break-all; /* Helps break long strings without spaces */
-    /* --- Fade-In Animation for Main Content --- */
+}
+
+/* --- Fade-In Animation for Main Content --- */
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(20px); } /* Start invisible and slightly below */
     to { opacity: 1; transform: translateY(0); } /* End fully visible at original position */
-}
-
-main {
-    /* Keep all your existing main styles here, then add the animation */
-    background-color: #2f3136;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-    max-width: 600px;
-    margin: 0 auto;
-    text-align: left;
-
-    /* Add the animation properties */
-    animation: fadeIn 0.8s ease-out forwards; /* Name | Duration | Timing Function | Fill Mode */
 }
