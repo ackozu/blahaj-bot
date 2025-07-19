@@ -15,7 +15,7 @@ The ToS and Privacy Policy for the Discord bot **Blåhaj**. (1395148660278427668
 
 - **`/userinfo [member]`: Displays detailed information about a specified user or yourself.**
 
-- **`/serverinfo1: Displays information about the current Discord server.**
+- **`/serverinfo`: Displays information about the current Discord server.**
 
 - **`/avatar [member]`: Shows the avatar of a specified user or your own.**'
 
