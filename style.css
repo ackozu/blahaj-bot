@@ -97,3 +97,22 @@ pre code {
     font-size: inherit; /* Inherit font size from 'pre' */
     white-space: pre-wrap; /* Allows long lines to wrap if desired, but `overflow-x: auto` is usually better */
     word-break: break-all; /* Helps break long strings without spaces */
+    /* --- Fade-In Animation for Main Content --- */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); } /* Start invisible and slightly below */
+    to { opacity: 1; transform: translateY(0); } /* End fully visible at original position */
+}
+
+main {
+    /* Keep all your existing main styles here, then add the animation */
+    background-color: #2f3136;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+
+    /* Add the animation properties */
+    animation: fadeIn 0.8s ease-out forwards; /* Name | Duration | Timing Function | Fill Mode */
+}
