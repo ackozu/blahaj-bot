@@ -16,19 +16,23 @@ To identify users for moderation commands (!ban, !kick, !timeout, !unban, !softb
 
 ###  **Discord Guild (Server) IDs**
 - **Purpose** To identify the server where commands are executed, manage server-specific settings (e.g., welcome/goodbye channels, auto-roles), and enable server-specific functionalities.
+
 - **Retention** Stored as long as the bot remains in the respective Discord server.
 
 ### Discord Channel IDs
 - **Purpose:** To designate specific channels for features like welcome messages (!setwelcome), goodbye messages (!setgoodbye), and to send command responses.
+
 - **Retention** Stored as long as the bot remains in the respective Discord server and the setting is active.
 
 
 ### Discord Role IDs
 - **Purpose** To manage auto-role assignments (!setautorole) for new members and to display role information in user information commands.
+
 - **Retention** Stored as long as the bot remains in the respective Discord server and the setting is active.
 
 ### Timestamps
 - **Purpose** Such as user join dates (for !userinfo and welcome messages) and command invocation times (for internal usage tracking and debugging).
+
 - **Retention** Stored as part of Discord's API data or temporarily for command processing.
 
 
@@ -36,18 +40,26 @@ To identify users for moderation commands (!ban, !kick, !timeout, !unban, !softb
 **The information collected by Blåhaj Bot is used exclusively to provide and improve the bot's functionality, including:**
 
 - **Executing moderation commands (ban, kick, timeout, softban, clear).**
+
 - **Displaying server and user information.**
+
 - **Sending automated welcome and goodbye messages to configured channels.**
+
 - **Assigning roles automatically to new members.**
+
 - **Responding to user commands (e.g., !joke, !say).**
+
 - **Internal debugging and performance monitoring to ensure the bot runs smoothly.**
 
 
 ## 3. Data Storage and Security
 
 - **All collected persistent data (Guild IDs, Channel IDs, Role IDs) is stored securely in a SQLite database file (bot_settings.db) hosted on Replit's file system.**
+
 - **This database is not directly accessible to the public.**
+
 - **We implement reasonable technical and organizational measures designed to protect the information we collect from unauthorized access, disclosure, alteration, or destruction.**
+
 - **Data is retained only for the duration necessary to provide the bot's services or as required by law. For instance, server-specific settings are retained as long as the bot remains in that server.**
 
 
@@ -61,8 +73,11 @@ To identify users for moderation commands (!ban, !kick, !timeout, !unban, !softb
 **You have certain rights regarding your personal data. To exercise these rights, please join our official Blåhaj Bot Support Server and contact a bot administrator or developer. We will respond to your request in accordance with applicable laws.**
 
 - **Right to Access: You can request a copy of the personal data that Blåhaj Bot may hold about you.**
+
 - **Right to Rectification: You can request the correction of inaccurate or incomplete data.**
+
 - **Right to Erasure ("Right to be Forgotten"): You can request the deletion of your personal data from our records.**
+
 - **Right to Object/Restrict Processing: You can object to or request the restriction of certain data processing activities.**
 
 
