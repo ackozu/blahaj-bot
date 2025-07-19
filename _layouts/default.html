@@ -11,19 +11,31 @@
     <link rel="stylesheet" href="{{ site.baseurl }}/style.css">
 </head>
 <body>
-    <header>
-        <h1><a href="{{ site.baseurl }}/">{{ site.title | default: "My Site" }}</a></h1>
-        <nav>
-            <a href="{{ site.baseurl }}/">Home</a> |
-            <a href="{{ site.baseurl }}/PRIVACY.html">Privacy</a> |  <a href="{{ site.baseurl }}/TERMS.html">Terms</a>        </nav>
-    </header>
+    <div class="site-wrapper">
+        <header class="site-header">
+            <div class="container">
+                <h1><a href="{{ site.baseurl }}/">{{ site.title | default: "My Site" }}</a></h1>
+                <nav class="site-nav">
+                    <a href="{{ site.baseurl }}/">Home</a> |
+                    <a href="{{ site.baseurl }}/PRIVACY.html">Privacy</a> |
+                    <a href="{{ site.baseurl }}/TERMS.html">Terms</a>
+                    </nav>
+            </div>
+        </header>
 
-    <main>
-        {{ content }}
-    </main>
+        <main class="site-main container">
+            {{ content }}
+        </main>
 
-    <footer>
-        <p>`Blåhaj ・ Discord Bot`</p>
+        <footer class="site-footer">
+            <div class="container">
+                <p>Blåhaj ・ Discord Bot</p>
+                <nav class="footer-nav">
+                    <a href="{{ site.baseurl }}/privacy.html">Privacy Policy</a> |
+                    <a href="{{ site.baseurl }}/terms.html">Terms of Service</a>
+                </nav>
+            </div>
         </footer>
+    </div>
 </body>
 </html>
