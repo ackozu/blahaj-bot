@@ -1,192 +1,99 @@
-/* --- Global Styles --- */
 body {
-    font-family: ''Arial', sans serif; /* Using Intel One Mono for all text now */
+    font-family: 'Arial', sans serif;
     margin: 0;
-    padding: 0; /* Remove body padding as container will handle it */
-    background-color: #201c1c; /* Main background color */
+    padding: 20px;
+    background-color: #1c1e2b; /* Main background color */
     color: #e0e0e0; /* Light gray text for contrast */
-    text-align: center; /* This will center elements that don't have text-align: left */
-    min-height: 100vh; /* Make body at least viewport height for sticky footer */
-    display: flex; /* Flexbox for sticky footer */
-    flex-direction: column; /* Arrange children in a column */
+    text-align: center; /* This will center header, footer, and any direct body text */
 }
 
-/* Reusable container for content width and centering */
-.container {
-    max-width: 800px; /* Increased max-width for more content space */
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0 20px; /* Padding on sides for smaller screens */
-    width: 100%; /* Ensure it takes full width when smaller than max-width */
-}
-
-/* Site Wrapper for Sticky Footer */
-.site-wrapper {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-.site-main {
-    flex-grow: 1; /* Allows main content to take up available space, pushing footer down */
-    background-color: #2f3136; /* Distinct dark shade for main content area */
-    padding: 20px 40px; /* More padding for content */
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-    margin-top: 20px; /* Spacing from header */
-    margin-bottom: 20px; /* Spacing to footer */
-    text-align: left; /* Text inside main is left-aligned */
-}
-
-
-/* --- Header Styles --- */
-.site-header {
-    background-color: #2c2f33; /* Slightly different dark shade */
-    color: white;
+header {
+    background-color: #1c1e2b; /* A slightly lighter shade of the main background for header */
+    color: white; /* White text for header */
     padding: 10px 0;
-    border-bottom: 2px solid #4f545c;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #4f545c; /* A subtle border for separation */
+    /* text-align: center; - Inherits from body */
 }
 
-.site-header .container {
-    display: flex; /* Use flexbox for header content */
-    justify-content: space-between; /* Space out title and nav */
-    align-items: center; /* Vertically center them */
-    flex-wrap: wrap; /* Allow wrapping on small screens */
-}
-
-.site-header h1 {
-    margin: 0; /* Remove default h1 margin */
-    color: #7289DA;
-    font-size: 1.8em; /* Adjust font size */
-}
-
-.site-header h1 a {
-    color: #7289DA;
-    text-decoration: none;
-}
-
-.site-nav a {
-    color: #7289DA;
-    text-decoration: none;
-    margin-left: 15px; /* Spacing between nav links */
-    font-weight: bold;
-    transition: color 0.3s ease; /* Smooth hover transition */
-}
-
-.site-nav a:hover {
-    color: #a7b7ed; /* Lighter accent on hover */
-    text-decoration: underline;
-}
-
-/* --- Content Styles (from previous steps, just for reference) --- */
 h1 {
     color: #7289DA; /* Accent color for headings */
 }
 
+main {
+    background-color: #2f3136; /* Another distinct dark shade for main content area */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* More pronounced shadow for depth */
+    max-width: 600px;
+    margin: 0 auto; /* This centers the main content block itself */
+    text-align: left; /* This makes the text INSIDE the main block align to the left */
+}
+
 p {
-    line-height: 1.6;
+    line-height: 2.0; /* Improve readability of paragraphs */
 }
 
 button {
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
-    background-color: #7289DA;
+    background-color: #7289DA; /* Accent color for buttons */
     color: white;
     border: none;
     border-radius: 5px;
     margin-top: 15px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
 }
 
 button:hover {
-    background-color: #677BC4;
+    background-color: #677BC4; /* Slightly darker accent color on hover */
 }
 
-/* --- Footer Styles --- */
-.site-footer {
-    margin-top: auto; /* Pushes footer to the bottom of the flex container */
-    padding: 20px 0;
+footer {
+    margin-top: 30px;
     font-size: 0.8em;
-    color: #465999; /* Blurple for footer text */
-    background-color: #2c2f33; /* Match header background */
-    border-top: 2px solid #4f545c;
+    color: #465999; /* Slightly blurple for footer text */
+    /* text-align: center; - Inherits from body */
 }
 
-.footer-nav a {
-    color: #465999; /* Blurple for footer links */
+/* Links will also use the accent color */
+a {
+    color: #7289DA; /* Accent color for links */
     text-decoration: none;
-    margin: 0 10px;
-    transition: color 0.3s ease;
 }
 
-.footer-nav a:hover {
-    color: #7289DA; /* Accent color on hover for footer links */
+a:hover {
     text-decoration: underline;
 }
 
-/* --- Code Block Styles --- */
 /* Styling for Inline Code */
 code {
-    font-family: 'Intel One Mono', monospace;
-    background-color: #36393f;
-    color: #b9bbbe;
-    padding: 2px 4px;
-    border-radius: 3px;
-    font-size: 0.9em;
-    white-space: nowrap;
+    font-family: 'Intel One Mono', monospace; /* Ensure the code font is applied */
+    background-color: #36393f; /* A slightly distinct dark background for inline code */
+    color: #b9bbbe; /* Lighter text color for readability */
+    padding: 2px 4px; /* Small padding around the text */
+    border-radius: 3px; /* Slightly rounded corners */
+    font-size: 0.9em; /* Make inline code slightly smaller than surrounding text */
+    white-space: nowrap; /* Prevent inline code from wrapping unnaturally */
 }
-
-/* Styling for Code Blocks (multi-line) */
 pre {
-    background-color: #2b2d31;
-    color: #b9bbbe;
-    padding: 15px;
-    border-radius: 8px;
-    overflow-x: auto;
+    background-color: #2b2d31; /* A distinct dark background for the entire block */
+    color: #b9bbbe; /* Lighter text color for readability */
+    padding: 15px; /* Generous padding inside the block */
+    border-radius: 8px; /* Rounded corners for the block */
+    overflow-x: auto; /* Adds horizontal scroll if code is too long */
     margin-top: 20px;
     margin-bottom: 20px;
-    font-family: 'Intel One Mono', monospace;
-    text-align: left;
+    font-family: 'Intel One Mono', monospace; /* Ensure the code font is applied */
+    text-align: left; /* Ensure text inside code block is left aligned, even if main is centered */
 }
-
 pre code {
-    display: block;
-    padding: 0;
-    background-color: transparent;
-    color: inherit;
-    font-size: inherit;
-    white-space: pre-wrap;
-    word-break: break-all;
-}
-
-/* Optional: If you have specific syntax highlighting from Jekyll, you might target these */
-.highlight {
-    background-color: #2b2d31;
-    border-radius: 8px;
-    padding: 15px;
-    overflow-x: auto;
-}
-.highlight pre {
-    background-color: transparent;
-    padding: 0;
-    margin: 0;
-}
-
-/* --- Media Queries for Responsiveness --- */
-@media (max-width: 600px) {
-    .site-header .container {
-        flex-direction: column; /* Stack header items vertically */
-    }
-    .site-nav {
-        margin-top: 10px;
-    }
-    .site-nav a {
-        margin: 0 8px; /* Reduce horizontal margin for smaller screens */
-    }
-    .site-main {
-        padding: 20px; /* Adjust padding for smaller screens */
-        margin-left: 10px; /* Small side margin for mobile */
-        margin-right: 10px;
-    }
-}
+    /* Styles specifically for the code INSIDE the pre block */
+    display: block; /* Ensures the code takes up full width of pre */
+    padding: 0; /* Remove extra padding if inherited from 'code' rule */
+    background-color: transparent; /* No background as it's set on 'pre' */
+    color: inherit; /* Inherit text color from 'pre' */
+    font-size: inherit; /* Inherit font size from 'pre' */
+    white-space: pre-wrap; /* Allows long lines to wrap if desired, but `overflow-x: auto` is usually better */
+    word-break: break-all; /* Helps break long strings without spaces */
