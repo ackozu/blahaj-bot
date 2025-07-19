@@ -8,23 +8,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Intel+One+Mono:ital@0;1&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css"> </head>
+    <link rel="stylesheet" href="{{ site.baseurl }}/style.css"> 
+</head>
 <body>
-    </body>
-</html>
     <header>
-        <h1>Blåhaj ・ Discord Bot</h1>
+        <h1><a href="{{ site.baseurl }}/">{{ site.title | default: "My Site" }}</a></h1>
+        <nav>
+            <a href="{{ site.baseurl }}/">Home</a>
+            </nav>
     </header>
 
     <main>
-        <p>Body Text</p>
-        <button id="myButton">Click Me!</button>
-        <p id="message"></p>
-    </main>
+        {{ content }} </main>
 
     <footer>
-        <p>Blåhaj ・ Discord Bot</p>
+        <p>&copy; {{ site.time | date: "%Y" }} {{ Blåhaj ・ Discord Bot | default: "Your Name" }}</p>
     </footer>
-
-    <script src="script.js"></script> </body>
+</body>
 </html>
