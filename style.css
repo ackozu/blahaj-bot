@@ -2,63 +2,64 @@ body {
     font-family: 'Arial', sans serif;
     margin: 0;
     padding: 20px;
-    background-color: #151424;
-    color: #e0e0e0;
+    background-color: #201c1c; /* Main background color */
+    color: #e0e0e0; /* Light gray text for contrast */
     text-align: center; /* This will center header, footer, and any direct body text */
 }
 
 header {
-    background-color: #2a2a3a;
-    color: white;
+    background-color: #2c2f33; /* A slightly lighter shade of the main background for header */
+    color: white; /* White text for header */
     padding: 10px 0;
     margin-bottom: 20px;
-    border-bottom: 2px solid #5a5a6a;
-    /* text-align: center; - No need to explicitly set, it inherits from body */
+    border-bottom: 2px solid #4f545c; /* A subtle border for separation */
+    /* text-align: center; - Inherits from body */
 }
 
 h1 {
-    color: #00b0ff;
+    color: #7289DA; /* Accent color for headings */
 }
 
 main {
-    background-color: #1f1e2f;
+    background-color: #2f3136; /* Another distinct dark shade for main content area */
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* More pronounced shadow for depth */
     max-width: 600px;
     margin: 0 auto; /* This centers the main content block itself */
     text-align: left; /* This makes the text INSIDE the main block align to the left */
 }
 
 p {
-    line-height: 1.6;
+    line-height: 1.6; /* Improve readability of paragraphs */
 }
 
 button {
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
-    background-color: #007bff;
+    background-color: #7289DA; /* Accent color for buttons */
     color: white;
     border: none;
     border-radius: 5px;
     margin-top: 15px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #677BC4; /* Slightly darker accent color on hover */
 }
 
 footer {
     margin-top: 30px;
     font-size: 0.8em;
-    color: #888888;
-    /* text-align: center; - No need to explicitly set, it inherits from body */
+    color: #888888; /* Slightly darker gray for footer text */
+    /* text-align: center; - Inherits from body */
 }
 
+/* Links will also use the accent color */
 a {
-    color: #00b0ff;
+    color: #7289DA; /* Accent color for links */
     text-decoration: none;
 }
 
