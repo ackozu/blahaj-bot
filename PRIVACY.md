@@ -72,4 +72,4 @@ To identify users for moderation commands (!ban, !kick, !timeout, !unban, !softb
 
 ## 8. Contact Information
 
-Blåhaj Bot Support Server: [Support Disocord Server]](https://discord.gg/A4XfDaNunr)
+Blåhaj Bot Support Server: [Support Disocord Server](https://discord.gg/A4XfDaNunr)
