@@ -1,3 +1,7 @@
+---
+layout: default
+title: Blåhaj ・ Discord Bot ・ Privacy Policy
+---
 # Effective Date: July 17, 2025
 Your privacy is important to us. This Privacy Policy explains what information Blåhaj Bot collects, how it's used, stored, and protected, and the choices you have regarding your data. By inviting Blåhaj Bot to your Discord server or interacting with its features, you agree to the terms outlined in this policy.
 
