@@ -1,3 +1,7 @@
+---
+layout: default
+title: Blåhaj ・ Discord Bot ・ Terms of Serivce
+---
 # Terms of Service (ToS)
 By inviting **Blåhaj** Bot to your Discord server, or by **interacting** with any of its commands or features, you agree to be bound by these **Terms of Service**. If you do not agree to these terms, **please do not use the bot**.
 
