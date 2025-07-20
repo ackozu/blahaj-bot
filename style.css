@@ -14,7 +14,7 @@ body {
 }
 
 header {
-    background-color: rgba(0, 255, 140, 0); /* A slightly lighter shade of the main background for header */
+    background-color: rgba(64, 38, 255, 0.74); /* A slightly lighter shade of the main background for header */
     color: white; /* White text for header */
     padding: 10px 0;
     margin-bottom: 20px;
@@ -24,6 +24,9 @@ header {
 
 h1 {
     color: #7289DA; /* Accent color for headings */
+}
+h2 {
+    color: #8197e6; /* Accent color for headings */
 }
 
 main {
