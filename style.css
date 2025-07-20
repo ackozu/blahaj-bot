@@ -5,6 +5,12 @@ body {
     background-color: #1c1e2b; /* Main background color */
     color: #e0e0e0; /* Light gray text for contrast */
     text-align: center; /* This will center header, footer, and any direct body text */
+    background-image: url('../assets/Discord Blahaj - Github Pages.png');
+    background-size: cover; /* Covers the entire element */
+    background-repeat: no-repeat; /* Prevents repeating */
+    background-position: center center; /* Centers the image */
+    background-attachment: fixed; /* Keeps image fixed when scrolling */
+    min-height: 100vh; /* Ensures the body takes at least the full viewport height */
 }
 
 header {
