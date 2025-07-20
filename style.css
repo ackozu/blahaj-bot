@@ -6,7 +6,7 @@ body {
     color: #e0e0e0; /* Light gray text for contrast */
     text-align: center; /* This will center header, footer, and any direct body text */
        
-    background-image: url('{{ site.baseurl }}/assets/Discord Blahaj - Github Pages.png')
+    background-image: url('{{ site.baseurl }}https://github.com/ackozu/blahaj-bot/blob/main/assets/Discord%20Blahaj%20-%20Github%20Pages.png?raw=true')
     background-size: cover; /* This makes the image cover the entire background */
     background-position: center; /* Centers the image */
     background-repeat: no-repeat; /* Prevents the image from repeating */
