@@ -18,7 +18,7 @@ header {
     color: white; /* White text for header */
     padding: 3px 0;
     margin-bottom: 10px;
-    border-bottom: 2px solid #4f545c; /* A subtle border for separation */
+    border-bottom: 1px solid #7a4390; /* A subtle border for separation */
     /* text-align: center; - Inherits from body */
 }
 
