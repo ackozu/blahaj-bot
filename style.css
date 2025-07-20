@@ -14,10 +14,10 @@ body {
 }
 
 header {
-    background-color: rgba(64, 38, 255, 0.74); /* A slightly lighter shade of the main background for header */
+    background-color: hsla(230, 40%, 39%, .5); /* A slightly lighter shade of the main background for header */
     color: white; /* White text for header */
-    padding: 10px 0;
-    margin-bottom: 20px;
+    padding: 3px 0;
+    margin-bottom: 10px;
     border-bottom: 2px solid #4f545c; /* A subtle border for separation */
     /* text-align: center; - Inherits from body */
 }
@@ -26,7 +26,7 @@ h1 {
     color: #7289DA; /* Accent color for headings */
 }
 h2 {
-    color: #8197e6; /* Accent color for headings */
+    color: #a5b6f0; /* Accent color for headings */
 }
 
 main {
