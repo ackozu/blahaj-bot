@@ -14,7 +14,7 @@ body {
 }
 
 header {
-    background-color: hsla(230, 40%, 20%, 0.6); /* A slightly lighter shade of the main background for header */
+    background-color: hsla(230, 40%, 20%, 0); /* A slightly lighter shade of the main background for header */
     color: white; /* White text for header */
     padding: 1px 0;
     margin-bottom: 2px;
